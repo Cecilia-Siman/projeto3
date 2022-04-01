@@ -1,0 +1,67 @@
+
+body {
+    background-color: #E5E5E5;
+}
+
+.topBar {
+    height: 92px;
+    width: 100%;
+    background-color: #CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 6px 8px #888888;
+    z-index: 1;
+}
+
+
+
+.bottomBar{
+    height: 92px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 61px;
+    width: 88%;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container h2{
+    margin-top: 36px;
+}
+
+.options {
+    display: flex;
+    padding-top: 36px;
+}
+
+.dish {
+    height: 216px;
+    width: 172px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    position: relative;
+}
+
+
+/* banco de imagens: https://unsplash.com/s/photos/beverage*/
+@media (max-width: 614px) {
+    body {
+        background-color: tomato;
+    }
+
+}
