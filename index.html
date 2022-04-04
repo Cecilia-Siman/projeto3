@@ -23,30 +23,131 @@
     
     <div class="container">
         <h2>Primeiro, seu prato</h2>
-        <div class="options">            
-            <div class="dish"></div>
-            <div class="dish"></div>
-            <div class="dish"></div>
-            <div class="dish"></div>
+        <div class="food options">            
+            <div onclick="selectFood(this,12.0)" class="dish boxOption">
+                <img src="imagens/pizza.jpg">
+                <p class="option">Pizza (fatia)</p>
+                <p class="desc">Sabores diversos</p>
+                <p class="price">R$ 12,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectFood(this,18.5)" class="dish boxOption">
+                <img src="imagens/hamburguer.jpg">
+                <p class="option">Hamburguer</p>
+                <p class="desc">Temos opções vegetarianas!</p>
+                <p class="price">R$ 18,50</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectFood(this,7.0)" class="dish boxOption">
+                <img src="imagens/fritas.jpg">
+                <p class="option">Batata Frita</p>
+                <p class="desc">As favoritas</p>
+                <p class="price"> R$ 7,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectFood(this,10.0)" class="dish boxOption">
+                <img src="imagens/salad.jpg">
+                <p class="option">Salada</p>
+                <p class="desc">Pros dias fitness</p>
+                <p class="price"> R$ 10,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
         </div>
         <h2>Agora, sua bebida</h2>
-        <div class="options">            
-            <div class="dish"></div>
-            <div class="dish"></div>
-            <div class="dish"></div>
-            <div class="dish"></div>
+        <div class="options beverages">            
+            <div onclick="selectDrink(this,8.35)" class="drink boxOption">
+                <img src="imagens/cha.jpg">
+                <p class="option">Chá gelado</p>
+                <p class="desc">Chá mate com limão</p>
+                <p class="price"> R$ 8,35</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectDrink(this,5.0)" class="drink boxOption">
+                <img src="imagens/suco.jpg">
+                <p class="option">Suco natural</p>
+                <p class="desc">Sabores laranja, limão ou morango</p>
+                <p class="price"> R$ 5,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectDrink(this,6.98)" class="drink boxOption">
+                <img src="imagens/capuccino.jpg">
+                <p class="option">Capuccino</p>
+                <p class="desc">Tradicional ou sabor chocolate</p>
+                <p class="price"> R$ 6,98</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectDrink(this,10.5)" class="drink boxOption">
+                <img src="imagens/caipi.jpg">
+                <p class="option">Caipirinha</p>
+                <p class="desc">Tradicional de limão</p>
+                <p class="price"> R$ 10,50</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
         </div>
         <h2>Por fim, sua sobremesa</h2>
-        <div class="options">
-            <div class="dish"></div>
-            <div class="dish"></div>
-            <div class="dish"></div>
-            <div class="dish"></div>
+        <div class="options sweets">
+            <div onclick="selectDessert(this,5.0)" class="boxOption dessert">
+                <img src="imagens/bolo.jpg">
+                <p class="option">Bolo de chocolate</p>
+                <p class="desc">Bolinho de chocolate com calda</p>
+                <p class="price"> R$ 5,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectDessert(this,8.0)" class="boxOption dessert">
+                <img src="imagens/sorvete.jpg">
+                <p class="option">Sorvete</p>
+                <p class="desc">Vários sabores!</p>
+                <p class="price"> R$ 8,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectDessert(this,10.2)" class="boxOption dessert">
+                <img src="imagens/panqueca.jpg">
+                <p class="option">Panqueca</p>
+                <p class="desc">Acompanha sorvete de baunilha</p>
+                <p class="price"> R$ 10,20</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
+            <div onclick="selectDessert(this,7.0)" class="boxOption dessert">
+                <img src="imagens/donut.jpg">
+                <p class="option">Donut</p>
+                <p class="desc">Com recheio de chocolate</p>
+                <p class="price"> R$ 7,00</p>
+                <ion-icon class="off" name="checkmark-circle"></ion-icon>
+            </div>
         </div>
     </div>
 
     <div class="bottomBar">
-        <div class="button"></div>
+        <div onclick="fecharPedido()" class="button">
+            <div>
+                <p class="instruction">Selecione os 3 itens para fechar o pedido</p>
+            </div>
+        </div>
     </div>
+    <div class="off transparency">
+        <div class="confirme">
+            <p class="pedido">Confirme seu pedido</p>
+            <div class="requestText">
+                <p class="regular chosenDish">nome do prato</p>
+                <p class="regular chosenDrink">nome da bebida</p>
+                <p class="regular chosenDessert">nome da sobremesa</p>
+                <p class="total">Total</p>
+            </div>
+            
+            <div class="requestPrice">
+                <p class="regular priceDish">prato</p>
+                <p class="regular priceDrink">bebida</p>
+                <p class="regular priceDessert">sobrem</p>
+                <p class="finalPrice">final</p>
+            </div>
+            <div onclick="pedir()" class="buttonConfirme">
+                <p>Tudo certo, pode pedir!</p>
+            </div>
+            <p onclick="window.location.reload();" class="cancelar">Cancelar</p>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -46,27 +46,6 @@ body {
     margin-left: 24px;
 }
 
-
-
-.bottomBar{
-    height: 92px;
-    width: 100%;
-    background-color: #FFFFFF;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button {
-    height: 61px;
-    width: 88%;
-    background-color: #CBCBCB;
-    border-radius: 50px;
-}
-
 .container {
     margin-top: 126px;
     margin-bottom: 110px;
@@ -84,7 +63,18 @@ body {
     /*overflow: hidden;*/
 }
 
-.dish {
+.options img{
+    object-fit: cover;
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+    border-radius: 4px;
+    overflow-x: scroll;
+}
+
+.boxOption {
     height: 216px;
     width: 172px;
     background-color: #FFFFFF;
@@ -93,13 +83,259 @@ body {
     margin-left: 17px;
     box-shadow: 0px 0px 8px -4px #888888;
     /*box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);*/
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
+.option {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    position: absolute;
+    width: 139px;
+    height: 23px;
+    left: 14px;
+    bottom: 73px;
+    
+}
+
+.desc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #A6A6A6;
+    position: absolute;
+    width: 139px;
+    height: 23px;
+    left: 14px;
+    bottom: 54px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    width: 139px;
+    height: 23px;
+    left: 14px;
+    bottom: 18px;
+}
+
+ion-icon {
+    color: #32B72F;
+    font-size: 19px;
+    position: absolute;
+    bottom: 11px;
+    right: 8px;
+}
+
+
+.bottomBar{
+    height: 92px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+    width: 88%;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+}
+
+.onButton {
+    background-color: #32B72F;
+}
+
+.instruction{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 200px;
+    /*height: 53px;*/
+}
+
+
+/*Aplicações JS*/
+
+.selected {
+    border: solid 5px #32B72F;
+}
+
+.transparency {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.9);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirme{
+    background-color: #50D074;
+    height: 353px;
+    width: 377px;
+    border-radius: 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pedido {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 21px;
+    
+}
+
+.regular {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+/*.chosenDish {
+    position: absolute;
+    top: 77px;
+    left: 26px;
+}
+
+.chosenDrink {
+    position: absolute;
+    top: 100px;
+    left: 26px;
+}
+
+.chosenDessert {
+    position: absolute;
+    top: 123px;
+    left: 26px;
+}
+
+.total {
+    position: absolute;
+    top: 150px;
+    left: 26px;
+}
+
+.priceDish {
+    position: absolute;
+    top: 77px;
+    right: 26px;
+}
+
+.priceDrink{
+    position: absolute;
+    top: 100px;
+    right: 26px;
+}
+
+.priceDessert {
+    position: absolute;
+    top: 123px;
+    right: 26px;
+}
+
+.finalPrice {
+    position: absolute;
+    top: 150px;
+    right: 26px;
+}*/
+
+.total,.finalPrice{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.requestText {
+    position: absolute;
+    top: 77px;
+    left: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.requestPrice {
+    position: absolute;
+    top: 77px;
+    right: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.buttonConfirme{
+    background-color: #FFFFFF;
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonConfirme p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #50D074;
+}
+
+.cancelar {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 20px;
+    /*margin-left: 153px;*/
+}
+
+.off {
+    display: none;
+}
 
 /* banco de imagens: https://unsplash.com/s/photos/beverage*/
 @media (max-width: 614px) {
     body {
         background-color: tomato;
+    }
+    .options {
+        /*overflow: hidden;*/
+        overflow-x: scroll;
     }
 
 }
