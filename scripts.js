@@ -101,7 +101,6 @@ function fecharPedido(){
 } 
 
 function pedir() {
-    /*alert("R$"+finalPrice+nameFood+nameDrink+nameDessert+personalName+address);*/
     let finalText = 'Olá, gostaria de fazer o pedido: \n- Prato: ' + nameFood + 
     '\n - Bebida: ' + nameDrink +
     '\n - Sobremesa: ' + nameDessert +
@@ -110,7 +109,7 @@ function pedir() {
     '\n Endereço: ' + address;
     encode = encodeURIComponent(finalText);
     textWpp = 'https://wa.me/5531997201266?' + encode;
-    alert(finalText + ' ' + textWpp);
-    window.open(textWpp);
     /*alert(finalText + ' ' + textWpp);*/
+    window.open(textWpp);
+    
 }

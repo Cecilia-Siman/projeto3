@@ -21,7 +21,6 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-
 body {
     background-color: #EEEEEE;
 }
@@ -37,7 +36,7 @@ body {
     z-index: 1;
 }
 
-.topBar p{
+.topBar p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -51,7 +50,7 @@ body {
     margin-bottom: 110px;
 }
 
-.container h2{
+.container h2 {
     margin-top: 36px;
     margin-left: 17px;
 }
@@ -60,10 +59,10 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 16px;
-    /*overflow: hidden;*/
+    overflow-x: scroll;
 }
 
-.options img{
+.options img {
     object-fit: cover;
     width: 144px;
     height: 87px;
@@ -71,7 +70,6 @@ body {
     margin-left: 14px;
     margin-right: 14px;
     border-radius: 4px;
-    overflow-x: scroll;
 }
 
 .boxOption {
@@ -98,7 +96,6 @@ body {
     height: 23px;
     left: 14px;
     bottom: 73px;
-    
 }
 
 .desc {
@@ -133,8 +130,7 @@ ion-icon {
     right: 8px;
 }
 
-
-.bottomBar{
+.bottomBar {
     height: 92px;
     width: 100%;
     background-color: #FFFFFF;
@@ -168,7 +164,6 @@ ion-icon {
     text-align: center;
     color: #FFFFFF;
     width: 200px;
-    /*height: 53px;*/
 }
 
 
@@ -191,7 +186,7 @@ ion-icon {
     align-items: center;
 }
 
-.confirme{
+.confirme {
     background-color: #50D074;
     height: 353px;
     width: 377px;
@@ -208,7 +203,6 @@ ion-icon {
     color: #FFFFFF;
     position: absolute;
     top: 21px;
-    
 }
 
 .regular {
@@ -219,55 +213,8 @@ ion-icon {
     padding-bottom: 20px;
 }
 
-/*.chosenDish {
-    position: absolute;
-    top: 77px;
-    left: 26px;
-}
 
-.chosenDrink {
-    position: absolute;
-    top: 100px;
-    left: 26px;
-}
-
-.chosenDessert {
-    position: absolute;
-    top: 123px;
-    left: 26px;
-}
-
-.total {
-    position: absolute;
-    top: 150px;
-    left: 26px;
-}
-
-.priceDish {
-    position: absolute;
-    top: 77px;
-    right: 26px;
-}
-
-.priceDrink{
-    position: absolute;
-    top: 100px;
-    right: 26px;
-}
-
-.priceDessert {
-    position: absolute;
-    top: 123px;
-    right: 26px;
-}
-
-.finalPrice {
-    position: absolute;
-    top: 150px;
-    right: 26px;
-}*/
-
-.total,.finalPrice{
+.total,.finalPrice {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -291,9 +238,7 @@ ion-icon {
     align-items: flex-end;
 }
 
-
-
-.buttonConfirme{
+.buttonConfirme {
     background-color: #FFFFFF;
     width: 329px;
     height: 52px;
@@ -305,7 +250,7 @@ ion-icon {
     align-items: center;
 }
 
-.buttonConfirme p{
+.buttonConfirme p {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -321,21 +266,8 @@ ion-icon {
     color: #FFFFFF;
     position: absolute;
     bottom: 20px;
-    /*margin-left: 153px;*/
 }
 
 .off {
     display: none;
-}
-
-/* banco de imagens: https://unsplash.com/s/photos/beverage*/
-@media (max-width: 614px) {
-    body {
-        background-color: tomato;
-    }
-    .options {
-        /*overflow: hidden;*/
-        overflow-x: scroll;
-    }
-
 }
