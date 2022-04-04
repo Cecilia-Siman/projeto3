@@ -6,7 +6,8 @@ let finalPrice;
 let nameFood;
 let nameDrink;
 let nameDessert;
-
+let personalName;
+let address;
 
 function selectFood(box,val){
     const sel = document.querySelector(".food").querySelector(".selected");
@@ -102,13 +103,13 @@ function fecharPedido(){
 
 function pedir() {
     let finalText = 'Olá, gostaria de fazer o pedido: \n- Prato: ' + nameFood + 
-    '\n - Bebida: ' + nameDrink +
-    '\n - Sobremesa: ' + nameDessert +
-    '\n Total: R$ ' + finalPrice +
-    '\n \n Nome: ' + personalName +
-    '\n Endereço: ' + address;
+    '\n- Bebida: ' + nameDrink +
+    '\n- Sobremesa: ' + nameDessert +
+    '\nTotal: R$ ' + finalPrice +
+    '\n \nNome: ' + personalName +
+    '\nEndereço: ' + address;
     encode = encodeURIComponent(finalText);
-    textWpp = 'https://wa.me/5531997201266?' + encode;
+    textWpp = 'https://wa.me/5531997201266?text=' + encode;
     /*alert(finalText + ' ' + textWpp);*/
     window.open(textWpp);
     
